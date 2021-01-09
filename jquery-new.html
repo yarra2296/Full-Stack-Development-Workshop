@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- src type: relative URL=>another local file, absolute URL=>accessing over internet -->
+    <!-- multiple ways to access jqueries -->
+    <script type="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+    <script>
+    // function hide(id){​​​​
+    //     document.getElementBy(id).style.display="none";
+    // }​​​​
+    // $(selector/element).eventlistner()
+    // default access for jquery
+    // whole html file, whenever ready, implement the function
+    $(document).ready(function(){​​​​
+        // can use any tag, here using p tag
+        $("p").click(function(){​​​​
+            // inside para.
+            $(this).hide();
+            // hide inbuilt jquery function
+        }​​​​);
+    }​​​​);
+    // every statement is beginning with $ here
+    // what if i want two different p tags to have different functionalities ? should i be using ids then ?
+    // instead of p=> write id number similar to JS
+    </script>
+</head>
+<body>
+    <!-- create 3 click me -->
+    <!-- based on id does individually, else would apply function to all clicks -->
+ 
+    <!-- not requred for query -->
+ 
+    <!-- <p id="1" onclick="hide(this.id)">Click Me 0</p>
+    <p id="2" onclick="hide(this.id)">Click Me 1</p>
+    <p id="3" onclick="hide(this.id)">Click Me 2</p> -->
+ 
+    <p>Click Me 0</p>
+    <p>Click Me 1</p>
+    <p>Click Me 2</p>
+    <!-- when there are two many clicks handling by JS takes more time, so use jQuery -->
+</body>
+ 
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<!-- This is where we import files or other documents -->
+		<title>Title_here</title>
+		<link rel="stylesheet" type="text/css" href="external.css">
+		<style type="text/css">
+			table,td,th {
+        		border:1px solid black;
+        		width:66%;
+        		text-align:center;
+        		background-color:DarkGray;
+        		border-collapse:collapse;
+      		}
+      		
+			#table1,tr{
+				padding: center;
+				align-content: center;
+				border-collapse: collapse blue;
+
+			}
+			#table1 tr th{
+				color: red;
+			}
+			tr:nth-child(even){
+				background-color: green;
+			}
+			ul li{
+				color:green;
+			}
+			ul ul li
+			{
+				color:red;
+			} 
+			p:hover{
+				color: brown;
+			}
+			p:visited{
+				color: purple;
+			}
+			#div1{
+					color: red;
+					text-align: right;
+			}
+			#div2{
+					color: blue;
+					text-align: center;
+			}
+			#span1{
+				color: green;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<ul>
+			<li>Item1</li>
+			<ul>
+				<li>item 1.1</li>
+				<li>item1.2</li>
+
+			</ul>
+			<li>Item2</li>
+			<li>Item3</li>
+		</ul>
+		<hr>
+		<br>
+		<div id="div1">
+			<p id="p1">THIS IS A PARA1</p>
+			<p id="p2">THIS IS A PARA2</p>
+			<p class="class1">THIS IS A PARA3</p>
+			<h1>Heading</h1>
+		</div>
+		<div id="div2">
+			<p id="p1">THIS IS A PARA1</p>
+			<p id="p2">THIS IS A PARA2</p>
+			<p class="class1">THIS IS A PARA3</p>
+			<h1>Heading</h1>	
+		</div>
+
+		<p id="p1">THIS IS A PARA1</p>
+		<p id="p2">THIS IS A PARA2</p>
+		<p class="class1">THIS IS A PARA3</p>
+		<h1>Heading</h1>
+
+		<p class="class1">THIS IS A PARA4</p>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" width="200" height="200" alt="Error loading the image-html5 image">
+		<table id="table1">
+			<tr>
+				<th> States</th>
+				<th>Positive cases</th>
+				<th>Total cases</th>
+
+			</tr>
+			<tr>
+				<td>Texas</td>
+				<td>50k</td>
+				<td>300k</td>
+				
+			</tr>
+			<tr>
+				<td>New York</td>
+				<td>60k</td>
+				<td>350k</td>
+			</tr>
+			<tr>
+				<td>Florida</td>
+				<td>40k</td>
+				<td>400k</td>
+				
+			</tr>
+		</table>
+
+		<form>
+			<span id="span1">
+				<label> Name: </label>
+				<input type="text" name="name" placeholder="Enter Name here"/> 
+				<label>Date: </label>
+				<input type="date" name="date"/>
+				<label>Range: </label>
+				<input type="range" name="range" min="0" max="100"/>
+			</span>
+			<label>E-mail: </label>
+			<input type="email" name="email" placeholder="Enter e-mail here">
+			
+			<label>Password:</label>
+			<input type="password" name="password" required="true" placeholder="Enter password here">
+			<label>Gender</label>
+			
+			<input type="radio" value="female">
+			<label>Female</label>
+			<br>
+			<input type="radio" value="Male">
+			<label>Male</label>
+			<br>
+			<input type="radio" value="Other">
+			<label>Other</label>
+			<br>
+			
+			
+
+
+			<input type="checkbox" name="subject1">
+			<label>Subject1</label>
+			<input type="checkbox" name="subject2">
+			<label>Subject1</label>
+			<input type="checkbox" name="subject3">
+			<label>Subject1</label>
+
+			<input type="submit" name="Submit" id="submit_1" class="class1"/>
+			<input type="file" name="ChooseFile">
+
+			<video width="200" height="200" controls="true">
+				<source src="video.mp4" type="video/mp4">
+			</video>
+		</form>
+	</body>
+</html>

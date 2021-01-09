@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<style>
+			#container {
+				width: 400px;
+				height: 400px;
+				position: relative;
+				background: yellow;
+			}
+			#animate {
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				background: red;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<button onclick="myMove()"> Click Me </button>
+
+		<div id="container">
+			<div id="animate"></div>
+		</div>
+
+	</body>
+
+	<script type="text/javascript">
+		function myMove() {
+			var elem = document.getElementById("animate");
+			var pos = 0;
+			var id = setInterval(frame, 5); // 2 parameters -> function, time interval 5milliseconds
+			function frame() {
+				if(pos == 400) {
+					clearInterval(id);
+				}
+				else {
+					pos++;
+					elem.style.top = pos + "px";
+					// elem.style.left = pos + "px";
+				}
+			}
+		}
+	</script>
+
+</html>
+
+<!-- div -> division -->
+
+<!-- Previous sessions:
+HTML, CSS, BOOTSTRAP, JS
+
+Todays Sessions:
+JS -> example
+jQuery, Ajax calls, How we are connecting backend to frontend?, JS library ReactJS. -->
+
+<!-- conditional statements -> if/else
+
+if(condition) {
+	
+}
+
+else {
+	
+} -->
+
+<!-- == -> it compares only the value , === -> it strictly compares both numerical value and the datatype
+
+"2" === 2 -> == true, === false -->
+
+
+
+

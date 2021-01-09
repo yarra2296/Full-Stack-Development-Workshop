@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- relative URL, absolute URL  -->
+	</head>
+	<body>
+		<!-- <p id="1" onclick="hide(this.id)"> Click Me 0 </p>
+		<p id="2" onclick="hide(this.id)"> Click Me 1 </p>
+		<p id="3" onclick="hide(this.id)"> Click Me 2 </p> -->
+		<p id="10"> Click Me 0 </p>
+		<p class="1" id="11"> Click Me 1 </p>
+		<p class="1"> Click Me 2 </p>
+	</body>
+
+	<script>
+		// function hide(id) { 
+		// 	document.getElementById(id).style.display = "none";
+		// }
+		// $(selector/element).eventlistener()
+		$(document).ready(function(){
+			// $("p").click(function(){
+			// 	$(this).hide();
+			// });
+		});
+		$(document).ready(function() {
+			$(".1").click(function() {
+				$(this).hide();
+			})
+		});
+	</script>
+
+</html>
+
+<!-- jQuery -> framework -> javascript -> lightweight
+
+USE:
+1. reduce number of lines
+2. simplify the coding with javascript
+3. lot of inbuilt functionalities
+
+
+Bootstrap -> css -->
+
+
+
+
+
+
+
+

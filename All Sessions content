@@ -1,0 +1,243 @@
+Previous session:
+
+1. React -> intorduction, project/code explanation, examples -> 2, to display
+2. Databases -> SQL -> MySQL, NOSQL -> MongoDB (Robo 3T)
+
+FLOW: SPA
+
+index.html -> base html file -> main body
+
+index.js -> middleware connecting index.html and app.js
+
+app.js -> main component where in you can create number of parent or child components.
+
+
+React Component LifeCycle: extends React.Component
+
+-> Mouting 
+	-> constructor() {} -> method 
+		-> we can create/initialize state => this.state = { value: 0 }
+		-> bind the functions
+		-> gather the props from other components
+	-> ComponentWillMount() {} -> depriciated last year
+	-> render() {
+	return () => JSX => JS Xml
+	} -> This is to render the JSX elements
+	-> ComponentDidMount() {} -> mounting is completed -> any component completes it's 									execution
+-> updating 
+	-> componentWillUpdate(prev state, present state) {} -> If any props got changed, it 														will be executed
+-> unmounting 
+	-> ComponentWillUnMount() {} -> setInterval, closeInterval
+		-> When the component will be getting changed to another component this will be executed.
+
+
+import, export => es6 => javascript
+
+import -> link / script elements -> html
+
+export -> when you export, You can import and use it in any other component.
+
+
+JSX elements
+
+<div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+      <Login />
+</div>
+
+className <=> class -> attribute prop for JSX -> javascript + XML elements
+
+HTML -> pre-defined elements
+
+XML -> we will create new elements nd define functionalities
+
+
+state:  // objects
+
+this.state = {
+	value: 0;
+}
+
+this.setState({
+	value: 1
+})
+
+<button onClick={this.name}></button> => JSX
+
+<button onclick="name()"></button> => html
+
+
+STATE vs PROPS:
+
+state: that can be used inside a component/class -> defined, used and modified inside the component
+
+pass state to other components
+
+you will use props to transfer the data/content
+
+
+Database: -> structured database vs unstructured database, SQL vs NoSQL
+
+SQL -> structured query language, query to CRUD operations, Create, Read, update, delete
+
+https, http -> method -> get, put, post, delete -> api calls
+
+store all the information
+
+
+SQL, structured -> data will be saved in the form of, MySQL, SQL Server, Oracle database
+
+database schema <- tables <- values/rows, MYSQL <- queries (main)
+
+tables <- primary key (NOT null, unique), foriegn key (NOT null),...
+
+cannot store the unstructured data <- videos, audio, files, pdf, ppt
+
+text info, intm, 
+
+
+NoSQL, unstructured -> data will be saved in form of collections -> MongoDB, Neo4j, ..
+
+collections <- views <- documents <- JSON objects
+
+Don't have any constraints on the document level
+
+You can store any data in the NOSQL. -> BigData <- computational will be easier
+
+
+JSON: JavaScript Object Notation
+
+{
+	
+}
+
+Primary Key, Foriegn Key:
+
+pk: Every table will have a single pk <- Not null <- unique 
+
+fk: also had pk properties <- it just refers to another table's pk
+
+
+customer:
+
+id -> pk (1234), name
+
+order:
+
+cust_id -> fk, order_id, order_name,.....
+
+
+src={require("./images/"+data.image)}
+
+
+React -> synchronous 
+
+async, await -> returns response -> success, error
+promise -> return response, =>
+
+async function nme() {
+	await fetch("", {
+
+	})
+}
+
+1-2 sec
+
+Database -> store and give information.
+
+SQL  -> Structured query language -> database schema <- tables <- rows/content
+
+textual info -> int, float, varchar, data, time,.....
+
+videos, images, audios,..... 
+
+NoSQL <- MongoDB <- JSON -> JS object notation <- unique ID
+
+collections <- views <- documents {key: value}, [{}, {}, {}]
+
+uses:
+
+-> can be used to stored unstructured data
+	-> videos,.....
+-> Analysis of data -> Big Data -> Computational stuff 
+
+facebook -> sql database -> images, videos, textual info,
+
+
+{
+	"name": "xyz",
+	"password": "",
+	"email": "knfsnf"
+},
+{
+	"name": "abc",
+	"password": "",
+}
+
+
+MySQL: 
+
+insert into Customers (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country) VALUES (3, 'Cardinal', 'Tom B Erichsen', 'Skagen 21', 'Stavanger', 4006, 'USA');
+select COUNT(*) from Customers where country="USA";
+select count(*) from Customers;
+select * from Customers;
+select AVG(CustomerID) from Customers;
+DELETE from customers where CustomerID=3;
+UPDATE Customers SET ContactName = 'XYZ', PostalCode = 5000 where CustomerID = 2;
+select * from Customers;
+
+-- count, avg, sum, min, max, 
+-- conditional -> where clause
+-- insert -> insert into tablenme (cols) values (values);
+-- delete -> delete from tablename where;
+-- select * from tablename
+-- UPDATE tablename SET values where condition;
+
+
+NodeJS: -> Run time environment for javascript
+
+It is used to build API's:
+ 
+
+API -> Application programming Interface
+
+-> It is a connection between the UI (client) to the database
+
+API => http/https url => When you connect/call that URL <-> do the requests to the database
+
+CRUD -> create/save, retrieve, update, delete...
+
+method = "GET", "POST", "PUT", "DELETE"
+
+database -> queries (query to manipulate info)
+
+MIDDLE WARE ( NodeJS, ExpressJS )-> 1. gets the request from the client 
+2. It sees what is the method 
+3. Based on the method we write different queries (functions)
+
+fetch("https://localhost:3000/api/videos", GET, POST)
+
+secured layers in the middle layer, algorithms to encode the data, ....
+
+nodemon
+
+
+
+
+
+
+
+
